@@ -1,0 +1,100 @@
+.container-login {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  margin-left: -250px;
+}
+
+.voltar {
+  position: fixed;
+  top: 20px;
+  left: 20px; 
+  z-index: 1000; 
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.left-section {
+  width: 50%;
+  height: 100%;
+  background: #77B3D4;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-background {
+  background-color: #E7F7FF;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 120px;
+}
+
+.right-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #72a0c1;
+  border-radius: 20px;
+  background: #eaf6ff;
+  width: 100%;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #72a0c1;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: #5a89a4;
+}
+
+.login-form a {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #5a89a4;
+  text-decoration: none;
+  text-align: center;
+}

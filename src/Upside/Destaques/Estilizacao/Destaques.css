@@ -1,0 +1,119 @@
+:root {
+  --background-dark: #0a192f;
+  --text-dark: #e0e0e0;
+  --card-dark: #112240;
+  --shadow-dark: rgba(0, 123, 255, 0.3);
+  
+  --background-light: #f0f0f0;
+  --text-light: #4a8fcf;
+  --card-light: hsl(201, 52%, 65%);
+  --shadow-light: rgba(0, 123, 255, 0.1);
+}
+
+body.light-mode {
+  --background-light: var(--background-light);
+  --text-light: var(--text-light);
+  --card-light: var(--card-light);
+  --shadow-light: var(--shadow-light);
+}
+
+.container3 {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  padding: 40px;
+  text-align: center;
+}
+
+/* Seções gerais */
+section {
+  margin: 50px 0;
+  padding: 30px;
+  background: var(--card-light);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px var(--shadow-light);
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* Grid layouts */
+.noticias-grid,
+.personagens-grid,
+.fandoms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Cartões */
+.noticia-card,
+.personagem-card,
+.fandom-card {
+  background: var(--background-light);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 6px 15px var(--shadow-light);
+}
+
+.noticia-card:hover,
+.personagem-card:hover,
+.fandom-card:hover {
+  transform: translateY(-12px);
+}
+
+.noticia-img,
+.personagem-img,
+.fandom-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #007bff;
+}
+
+.noticia-card h3,
+.personagem-card h3,
+.fandom-card h3 {
+  color: #007bff;
+  margin: 20px 15px;
+  font-size: 1.8rem;
+}
+
+.noticia-card p,
+.personagem-card p {
+  padding: 0 15px 20px;
+  font-size: 1.2rem;
+}
+
+/* Curiosidades */
+.curiosidades ul {
+  list-style: none;
+  padding: 0;
+}
+
+.curiosidade-item {
+  background: var(--background-light);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 6px 15px var(--shadow-light);
+  font-size: 1.2rem;
+}
+
+.curiosidade-item h3 {
+  color: #007bff;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .noticias-grid,
+  .personagens-grid,
+  .fandoms-grid {
+    grid-template-columns: 1fr;
+  }
+}

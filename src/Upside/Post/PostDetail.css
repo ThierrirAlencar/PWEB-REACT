@@ -1,0 +1,123 @@
+/* PostDetail.css - Estilizado com um design mais moderno */
+body {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  width: 100%;
+  max-width: 900px;
+  transition: all 0.3s ease;
+}
+
+.content:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.content h3 {
+  font-size: 28px;
+  color: #222;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eee;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.content .category {
+  font-size: 16px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.content .back-button {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.content .back-button button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.content .back-button button:hover {
+  background-color: #0056b3;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 800px; 
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.content .write-button {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.content .write-button .button {
+  padding: 14px 28px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.content .write-button .button:hover {
+  background-color: #218838;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+
+  .content h3 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .content .category {
+    font-size: 14px;
+  }
+
+  .post-detail-image {
+    max-height: 300px;
+  }
+
+  .content .write-button .button {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+}

@@ -1,0 +1,140 @@
+.news-container {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  gap: 10%;
+}
+
+.title1 {
+  font-size: 2.5rem;
+  color: #facc15;
+  margin-bottom: 20px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 5%;
+}
+
+.article-card {
+  background-color: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.article-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.article-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.article-content h2 {
+  font-size: 1.25rem;
+  color: #f8fafc;
+}
+
+.article-content p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin: 10px 0;
+}
+
+.read-more {
+  background-color: #facc15;
+  color: #0f172a;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+h2{
+  color: #0f172a;
+}
+
+.read-more:hover {
+  background-color: #eab308;
+}
+
+.toggle-form-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.toggle-form-button:hover {
+  background-color: #45a049;
+}
+
+.create-post-form {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.create-post-form.show {
+  display: block;
+  opacity: 1;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
